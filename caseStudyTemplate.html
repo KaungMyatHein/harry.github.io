@@ -8,9 +8,38 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
     <style>
-        body, html { height: 100%; margin: 0; padding: 0; overflow: hidden; }
-        .iframe-container { height: calc(100vh - 80px); width: 100%; margin-top: 80px; }
+        body, html { height: 100%; margin: 0; padding: 0; overflow-x: hidden; overflow-y: auto; }
+        .iframe-container { height: calc(100vh - 180px); width: 100%; margin-top: 140px; margin-bottom: 100px; }
         .iframe-container iframe { width: 100%; height: 100%; border: none; }
+        
+        /* Footer Styles */
+        .s-footer { 
+            background-color: #050505;
+            padding: 3rem 0;
+            position: relative;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        .s-footer .row { 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+        .s-footer .social { 
+            margin-bottom: 1.5rem;
+        }
+        .s-footer .social a {
+            color: rgba(255, 255, 255, 0.4);
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: all .3s;
+        }
+        .s-footer .social a:hover { 
+            color: #ffffff;
+        }
+        .s-footer .copyright span { 
+            font-size: 14px;
+        }
         
         /* Fix for navigation menu clash */
         .header-nav-wrap { width: 100%; padding-right: 150px; }
@@ -52,5 +81,17 @@
     <div class="iframe-container">
         <iframe src="https://healthy-handle-928.notion.site/ebd/1d9680f5245b80bc8e6fd8674c852c7f" frameborder="0" allowfullscreen></iframe>
     </div>
+    <footer class="s-footer">
+        <div class="row">
+            <div class="social">
+                <a href="https://github.com/harryhein" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/harry-hein" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <span>© 2024 Harry Hein. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </body>
 </html>
